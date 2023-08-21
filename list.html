@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tabungan Kelas</h1>
+    <form action="tabel.html" method="post">
+        <label for="nama">Nama :</label>
+        <input type="text" id="nama" name="nama">
+        <br><br>
+        <label for="nis">Nis :</label>
+        <input type="text" id="nis" name="nis">
+        <br><br>
+        <label for="namaben">Nama bendahara :</label>
+        <br><br>
+        <input type="radio" id="rahel" name="radio">
+        <label for="rahel">Rahel</label>
+        <br>
+        <input type="radio" id="meida" name="radio">
+        <label for="meida">Meida</label>
+        <br><br>
+        <label for="tanggal">Tanggal :</label>
+        <input for="text" id="tanggal" name="tanggal">
+        <br><br>
+        <label for="transaksi">Transaksi :</label>
+        <br>
+        <input type="checkbox" id="tabung" name="tabung">
+        <label for="tabung">Tabung</label>
+        <br>
+        <input type="checkbox" id="tarik" name="tarik">
+        <label for="tarik">Tarik</label>
+        <br>
+        <label for="nominaltabung">Nominal penabungan uang</label>
+        <select name="nominaltabung" id="nominaltabung">
+            <option value=" "></option>
+            <option value="5000">Rp. 5.000</option>
+            <option value="10000">Rp. 10.000</option>
+            <option value="20000">Rp. 20.000</option>
+            <option value="50000">Rp. 50.000</option>
+            <option value="100000">Rp. 100.000</option>
+        </select>
+        <br>
+        <br>
+        <label for="nominaltarik">Nominal penarikan uang</label>
+        <select name="nominaltarik" id="nominaltarik">
+            <option value=" "></option>
+            <option value="5000">Rp. 5.000</option>
+            <option value="10000">Rp. 10.000</option>
+            <option value="20000">Rp. 20.000</option>
+            <option value="50000">Rp. 50.000</option>
+            <option value="100000">Rp. 100.000</option>
+        </select>
+        <br><br>
+        <label for="p">(Kosongkan option jika tidak diperlukan)</label>
+        <br><br>
+        <label for="pesan">Pesan</label>
+        <br>
+        <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
+        <br>
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
