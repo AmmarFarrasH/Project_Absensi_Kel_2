@@ -7,12 +7,12 @@
 </head>
 <body>
     <h1>Tabungan Kelas</h1>
-    <form action="tabel.html" method="post">
+    <form action="tabel.html" method="post" id="rform">
         <label for="nama">Nama :</label>
-        <input type="text" id="nama" name="nama">
+        <input type="text" id="nama" name="nama" required>
         <br><br>
         <label for="nis">Nis :</label>
-        <input type="text" id="nis" name="nis">
+        <input type="text" id="nis" name="nis" required>
         <br><br>
         <label for="namaben">Nama bendahara :</label>
         <br><br>
@@ -23,7 +23,7 @@
         <label for="meida">Meida</label>
         <br><br>
         <label for="tanggal">Tanggal :</label>
-        <input for="text" id="tanggal" name="tanggal">
+        <input for="text" id="tanggal" name="tanggal" required>
         <br><br>
         <label for="transaksi">Transaksi :</label>
         <br>
@@ -60,7 +60,17 @@
         <br>
         <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
         <br>
+        <a href="welcome.html">
+            <button type="button">Kembali</button>
+        </a>
+        <br>
         <button type="submit">Kirim</button>
     </form>
+    <script>
+        function resetform(){
+            document.getElementById("rform").reset();
+        }
+    </script>
+    <button onclick="resetform()">ulangi</button>
 </body>
 </html>
