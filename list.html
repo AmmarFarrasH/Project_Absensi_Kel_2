@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="stylesList.css">
 </head>
 <body>
-    <h1>Tabungan Kelas</h1>
+    <h1 style="color: cadetblue;">Tabungan Kelas</h1>
     <form action="tabel.html" method="post" id="rform">
         <label for="nama">Nama :</label>
         <input type="text" id="nama" name="nama" required>
@@ -63,14 +64,15 @@
         <a href="welcome.html">
             <button type="button">Kembali</button>
         </a>
-        <br>
+        <br><br>
         <button type="submit">Kirim</button>
     </form>
+    <br>
     <script>
         function resetform(){
             document.getElementById("rform").reset();
         }
     </script>
-    <button onclick="resetform()">ulangi</button>
+    <center><button onclick="resetform()">ulangi</button></center>
 </body>
 </html>
