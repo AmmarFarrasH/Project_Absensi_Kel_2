@@ -1,0 +1,81 @@
+* {
+    text-align: center;
+   
+}
+body {
+   
+    font-family: "Sodo Sans SemiBold";
+    background-image: url("https://i0.wp.com/textures.world/wp-content/uploads/2021/09/17-Decorative-Paper-Texture.jpg?w=757&h=505&ssl=1");
+
+}
+
+.button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4%;
+    border-color: chocolate;
+    font-family: sans-serif;
+    cursor: pointer;
+    animation: forwards;
+    
+
+    
+    
+    
+    
+
+    }
+
+
+button:hover {
+    background-color: brown;
+    color: aliceblue;
+    transform: scale(1.1);
+    margin: 5px;
+    transition: ease-in;
+    transition-duration: 20ms;
+    width: 150px;
+    height: 50px;
+    
+    
+}
+
+button:active {
+    color:darkgrey;
+    background-color: black;
+    
+}
+
+h1 {
+    font-size: 88px;
+    font-weight: 800;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  h1::before,
+  h1::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease-out;
+  }
+  h1:hover::before {
+    color: #bb0000;
+    transform: translate(12px, -12px);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+  h1:hover::after {
+    color: #77efff;
+    transform: translate(24px, -24px);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
